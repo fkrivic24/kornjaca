@@ -1,4 +1,4 @@
-## Programiranje s kornjačom
+## Programiranje s kornjačo
 
 \"Kornjača\" je alat za učenje programiranja koji se koristio u jeziku
 Logo još kasnih 1960-ih. Python uključuje ovaj alat kao standardni
