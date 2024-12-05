@@ -18,9 +18,9 @@ Ovo rješenje radi što treba, ali je strukturalno loš program. Prvi problem je
 
 Na ovaj način jasno su nam odvojeni podaci i proces samog crtanja, a proces crtanja ne samo da izbjegava ponavljanje kôda već i omogućuje laku promjenu broja koraka kornjače. To ne samo da nam olakšava promjene ovog programa, već nam i otvara nove mogućnosti.
 
-::: important
+``` important
 Ponavljajte petljom i odvojite podatke od logike. Izbjegavajte ponavljanje istih naredbi dupliciranjem. Tome služi petlja. Također, odvajajte podatke od logike jer ih je tako lakše kasnije saznati i mijenjati. Navedeno olakšava održavanje i promjene te umanjuje mogućnost pogrešaka u većim programima.
-:::
+```
 
 U postavkama sada možemo namjestiti crtanje bilo kojeg pravilnog poligona. Pogledajmo primjere za trokut i heksagon.
 
