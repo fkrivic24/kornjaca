@@ -1,4 +1,4 @@
-## Programiranje s kornjačom
+# Programiranje s kornjačom
 
 "Kornjača" je alat za učenje programiranja koji se koristio u jeziku Logo još kasnih 1960-ih. Python uključuje ovaj alat kao standardni modul. Koncept je sljedeći: postoji kornjača koju možemo kretati kroz dvodimenzionalni prostor s jednostavnim naredbama poput "odi naprijed 50 piksela" ili "skreni lijevo za 45 stupnjeva". Kornjača se najčešće prikazuje kao strelica, a vrlo je lako s njom početi eksperimentirati i interaktivno.
 
