@@ -60,5 +60,5 @@ turn_angle = 360 / n_steps  # kut za skretanje
 for _ in range(n_steps):
     turtle.forward(side_length)  # crtanje strane
     turtle.left(turn_angle)
-Tako smo izračunali dužinu stranice na temelju radijusa, i svi poligoni sada imaju istu veličinu bez potrebe za ručnim podešavanjem.
 ```
+Tako smo izračunali dužinu stranice na temelju radijusa, i svi poligoni sada imaju istu veličinu bez potrebe za ručnim podešavanjem.
