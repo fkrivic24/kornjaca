@@ -2,8 +2,6 @@
 
 "Kornjača" je alat za učenje programiranja koji se koristio u jeziku Logo još kasnih 1960-ih. Python uključuje ovaj alat kao standardni modul. Koncept je sljedeći: postoji kornjača koju možemo kretati kroz dvodimenzionalni prostor s jednostavnim naredbama poput "odi naprijed 50 piksela" ili "skreni lijevo za 45 stupnjeva". Kornjača se najčešće prikazuje kao strelica, a vrlo je lako s njom početi eksperimentirati i interaktivno.
 
-![Interaktivan rad s kornjačom](turtle_idle){#fig:turtle_idle width="\textwidth"}
-
 Kornjača živi u modulu `turtle`, a prozor u kojem je vizualizacija se može pokrenuti s naredbom `turtle.showturtle()`. Osnovne naredbe za kretanje kornjače su `turtle.forward(distance)`, gdje je `distance` udaljenost za koju će se kornjača pomaknuti u smjeru u kojem je orijentirana, te `turtle.left(angle)` i `turtle.right(angle)`, gdje je `angle` broj stupnjeva za koji će kornjača promijeniti orijentaciju u lijevo ili desno. Kada program pišemo u datoteku, dobro dođe i naredba `turtle.done()` koja pokreće kornjaču kao aplikaciju koja čeka korisnički unos. Ovo je korisno i već ako samo želimo spriječiti da se prozor zatvori čim se program završi, kao što smo to ranije radili naredbom `input("Pritisni <enter> za kraj")`.
 
 Također, možemo modificirati i razne postavke kornjače kao što su brzina crtanja, debljina i boja linije i oblik kornjače. U ovom smislu najvažniji su nam brzina kornjače kako bi lakše mogli vidjeti što se zbiva i debljina linije, kako bi lakše vidjeli što je kornjača nacrtala. Brzinu kornjače možemo postaviti s funkcijom `turtle.speed(n)` gdje je n broj od jedan do deset, a jedan je najsporije kretanje. Debljinu linije možemo postaviti s funkcijom `turtle.width(n)` gdje je n broj piksela.
@@ -11,8 +9,6 @@ Također, možemo modificirati i razne postavke kornjače kao što su brzina crt
 Imajući to na umu, probajte implementirati program u kornjači koji crta kvadrat. Pokušajte napisati ovaj program prije no što nastavite čitati skriptu!
 
 Najjednostavnije rješenje ovog problema je kako slijedi:
-
-![Rezultat programa Kornjača i kvadrat 1](turtle_square){#fig:turtle_square width="50%"}
 
 Ovo rješenje radi što treba, ali je strukturalno loš program. Prvi problem je što se dvije posve iste naredbe, odnosno naredbe koje se sastoje od poziva na iste funkcije s istim parametrima, se u paru ponavljaju četiri puta. Kada krenemo na ovaj način ponavljati naredbe, to je signal da možemo iskoristiti petlju. Također, ulazne vrijednosti za izvršenje programa se ponavljaju u samim pozivima za funkcije, što ih čini težim za uočiti i mijenjati, a tako je i lakše napraviti grešku u kôdu. Na primjer, kada bismo željeli promijeniti dužinu stranice, morali bismo to učiniti na četiri različita mjesta u programu, a riječ je o banalno jednostavnom primjeru. Pogledajmo rješenje koje te vrijednosti izdvaja ranije kako bi njima bilo lakše baratati te koristi petlju za izbjegavanje ponavljanja kôda.
 
